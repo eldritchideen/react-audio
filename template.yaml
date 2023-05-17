@@ -38,6 +38,7 @@ Resources:
       EphemeralStorage:
         Size: 2048
       Policies:
+        - AmazonTranscribeFullAccess
         - S3ReadPolicy:
             BucketName: !Ref SourceBucketName
         - S3CrudPolicy:
